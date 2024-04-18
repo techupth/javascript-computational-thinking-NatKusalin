@@ -82,3 +82,10 @@ let orders = [
 ];
 
 // Start coding here
+
+let totalAmount = 0;
+orders.forEach(order => {
+  totalAmount += order.productPrice * order.productQuantity;
+})
+
+console.log(`Total amount of the order: ${totalAmount.toLocaleString()} Baht`);
